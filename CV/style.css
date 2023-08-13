@@ -1,0 +1,129 @@
+body {
+  font-family: Trebuchet MS, sans-serif;
+  background: linear-gradient(to bottom right, #DC63C2 0%, #8370D8 100%);
+  background-size: 400% 400%;
+  animation: gradient 7s ease infinite;
+  margin: auto;
+  min-height: 90vh;
+  min-width: 320px;
+  width: 90%;
+  overflow-y: scroll;
+  display: block;
+}
+
+/* Правилом задаю фоновый градиент */
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 20%;
+    }
+    50% {
+        background-position: 100% 20%;
+    }
+    100% {
+        background-position: 0% 20%;
+    }
+}
+
+.wrap {
+  width: 950px;
+  margin: 0 auto;
+}
+
+.block {
+  float: left;
+  width: 450px;
+}
+
+.clear {
+  clear: left;
+  padding-left: 250px;
+}
+
+.me {
+  font-size: 25px;
+  text-align: center;
+}
+
+.me-text{
+    font-size: 20px;
+    text-align: center; 
+}
+
+.contacts {
+  font-size: 25px;
+  text-align: center;
+}
+
+/* Свойства ссылок */
+
+a {
+  font-size: 22px;
+  display: block;
+  position: relative;
+  margin-bottom: 20px;
+  background: #e7e7e7;
+  border-radius: 15px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+  /* Свойства при наведении на ссылку */
+
+a:hover {
+  color:#9900cc;
+  text-decoration:underline;
+}
+
+h1 {
+  font-size: 40px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.tg {
+  margin-bottom: 30px;
+}
+
+/* Свойства фотографии*/
+
+.photo {
+  border-radius: 50%;
+  border: 3px solid transparent;
+  box-shadow: 0 1px 10px 0px rgba(0, 0, 0, 0.3);
+  object-fit: cover;
+  display: block;
+  margin: 0 auto;
+}
+
+  /* Эффект при наведении на картинку */
+
+.photo:hover {
+  border: 3px solid #9900cc;
+}
+
+/* Свойства кнопки*/
+
+.button {
+  width: 880px;
+  margin: auto;
+  text-align: center;
+  padding-top: 50px;
+}
+
+button {
+  font-size: 22px;
+  background-color: #CF97CB;
+  border-radius: 15px;
+  border: 3px solid transparent;
+  width: 300px;
+}
+
+/* Эффект при наведении на кнопку */
+
+button:hover {
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
